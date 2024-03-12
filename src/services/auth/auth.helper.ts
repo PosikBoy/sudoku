@@ -1,4 +1,4 @@
-import { IAuthResponse, ITokens } from "@/types/user.interface";
+import { IAuthResponse, ITokens } from "@/types/auth.interface";
 import Cookies from "js-cookie";
 
 export const saveTokensStorage = (data: ITokens) => {
