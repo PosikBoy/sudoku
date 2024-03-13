@@ -31,3 +31,9 @@ export const getUserStorage = () => {
   const user = JSON.parse(localStorage.getItem("user") || "{}");
   return user || null;
 };
+
+export const getUserTelegram = () => {
+  const username = window?.Telegram?.WebApp;
+
+  return username || null;
+};
