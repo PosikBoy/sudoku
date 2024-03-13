@@ -7,12 +7,7 @@
 // import axios from "axios";
 
 // export const authService = {
-//   //     async auth(type: "login" | "register", data) {
-//   //         const response = awa
-//   //   }
-
-//   async getNewTokens() {
-//     const refreshToken = getRefreshTokenStorage();
+//   async verifyConnection() {
 //     const response = await axios.post<
 //       string,
 //       {

@@ -13,10 +13,11 @@ const TelegramLogin = () => {
         src="https://telegram.org/js/telegram-web-app.js"
         async
         onLoad={() => {
-          setUser(window.Telegram.WebApp.initData);
+          setUser(window.Telegram.WebApp.initDataUnsafe);
         }}
       />
-      {user && <div>{user.username}</div>}
+      <p>Айди пользователя:</p>
+      {user && <div>{user?.user?.id}</div>}
     </div>
   );
 };
